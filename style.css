@@ -37,9 +37,8 @@ h3 {
     margin: 10px 0;
 }
 
-.oo-btn {
+/* .oo-btn {
     box-sizing: border-box;
-    /* Auto layout */
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -82,7 +81,7 @@ h3 {
 
 .dark:active {
     background: #015273;
-}
+} */
 
 
 @media only screen and (max-width: 600px) {
