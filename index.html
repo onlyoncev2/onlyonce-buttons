@@ -19,54 +19,34 @@
 
         <div class="columns" style="margin: 50px 0;">
             <div class="column">
-                <h3>Preview</h3>
-                <a href="javascript:void(null)" data-size="normal" data-color-scheme="light"
-                    aria-label="Fill with OnlyOnce" class="oo-btn">Fill with OnlyOnce</a>
+                <h3>Light theme</h3>
+                <a href="javascript:void(null)" class="oo-btn light">
+                    Fill with OnlyOnce
+                </a>
+            </div>
+            <div class="column">
+                <h3>Dark theme</h3>
+                <a href="javascript:void(null)" class="oo-btn dark">
+                    Fill with OnlyOnce
+                </a>
             </div>
         </div>
 
         <div class="columns" style="margin: 50px 0;">
             <div class="column">
-                <h3>Options</h3>
-                <form>
-                    <div class="form-group" id="form-id">
-                        <label class="form-label" for="btn-id">Form ID or URL</label>
-                        <input class="form-input" type="text" id="btn-id" pattern="^[a-zA-Z0-9]*\/[a-zA-Z0-9-]*" placeholder="company/form-name-or-id">
-                        <p class="form-input-hint">i.e: cocacola/intake-form</p>
-                    </div>
-                    <div class="form-group">
-                        <label>Color scheme</label>
-                        <select class="form-select" id="btn-color-scheme">
-                            <option selected value="light">Light</option>
-                            <option value="dark">Dark</option>
-                            <option value="auto">Auto</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-checkbox">
-                            <input type="checkbox" id="btn-size">
-                            <i class="form-icon"></i> Small button
-                        </label>
-                    </div>
-                </form>
-            </div>
-            <div class="column">
-                <h3>Code</h3>
                 <div class="form-group">
-                    <textarea class="form-input my-2" id="btn-code" onclick="this.focus();this.select()"
-                        readonly="readonly" placeholder="Textarea" rows="3">
-<a href="javascript:void(null)" data-size="normal" data-color-scheme="light" aria-label="Fill with OnlyOnce" class="oo-btn">Fill with OnlyOnce</a>
+                    <textarea class="form-input my-2" onclick="this.focus();this.select()" readonly="readonly" placeholder="Textarea" rows="3">
+<!-- Place this anywhere. Replace classname 'light' with 'dark' for dark version button -->
+<a href="javascript:void(null)" class="oo-btn light">Fill with OnlyOnce</a>
                     </textarea>
-                    <textarea class="form-input my-2" onclick="this.focus();this.select()" readonly="readonly"
-                        placeholder="Textarea" rows="3">
+                    <textarea class="form-input my-2" onclick="this.focus();this.select()" readonly="readonly" placeholder="Textarea" rows="3">
 <!-- Place this tag in your head or just before your close body tag. -->
 <script async defer src="https://buttons.onlyonce.com/oo-btn.js"></script>
                     </textarea>
-                </div>
+                  </div>
             </div>
         </div>
     </div>
-    <script async defer src="/preview.js"></script>
     <script async defer src="/oo-btn.js"></script>
 </body>
 
