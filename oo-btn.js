@@ -27,7 +27,7 @@
             btn.innerHTML = icon
             btn.append(span)
 
-            btn.href = "#";
+            // btn.href = "#";
 
             let selectedColorScheme = btn.getAttribute("data-color-scheme");
             if(selectedColorScheme == null){
