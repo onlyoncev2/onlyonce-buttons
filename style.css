@@ -37,53 +37,6 @@ h3 {
     margin: 10px 0;
 }
 
-/* .oo-btn {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 30px;
-    gap: 10px;
-    width: 255px;
-    height: 40px;
-    left: 20px;
-    top: 20px;
-    border-radius: 10px;
-    text-decoration: none;
-    font-style: normal;
-    font-size: 16px;
-    line-height: 20px;
-}
-
-.light {
-    background: #E9EDEF;
-    border: 1px solid #A2A9AF;
-    color: #303030;
-}
-
-.light:hover {
-    background: #FBFEFF;
-}
-
-.light:active {
-    background: #DDEFF8;
-}
-
-.dark {
-    background: #00202E;
-    color: #FFFFFF;
-}
-
-.dark:hover {
-    background: #003B53;
-}
-
-.dark:active {
-    background: #015273;
-} */
-
-
 @media only screen and (max-width: 600px) {
     #wrapper {
         display: block;
