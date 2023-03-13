@@ -1,72 +1,106 @@
 <!DOCTYPE html>
 <html lang="eng">
-
-<head>
+  <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OnlyOnce forms buttons</title>
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
     <link href="/spectre.min.css" rel="stylesheet" />
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="container grid-lg">
-        <div class="d-flex">
-            <img src="/icon.svg" class="px-2">
-            <h1 style="margin: 50px 0;">OnlyOnce Buttons</h1>
-        </div>
+      <div class="d-flex">
+        <img src="/icon.svg" class="px-2" />
+        <h1 style="margin: 50px 0">OnlyOnce Buttons</h1>
+      </div>
 
-        <div class="columns" style="margin: 50px 0;">
-            <div class="column">
-                <h3>Preview</h3>
-                <a href="javascript:void(null)" data-size="normal" aria-label="Fill with OnlyOnce" class="oo-btn">Fill with OnlyOnce</a>
-            </div>
+      <div class="columns" style="margin: 50px 0">
+        <div class="column">
+          <h3>Preview</h3>
+          <a
+            href="javascript:void(null)"
+            data-size="normal"
+            aria-label="Fill with OnlyOnce"
+            class="oo-btn"
+            ><span>Fill with OnlyOnce</span></a
+          >
         </div>
+      </div>
 
-        <div class="columns" style="margin: 50px 0;">
-            <div class="column">
-                <h3>Options</h3>
-                <form>
-                    <div class="form-group" id="form-id">
-                        <label class="form-label" for="btn-id">Form ID or URL</label>
-                        <input class="form-input" type="text" id="btn-id" pattern="^[a-zA-Z0-9]*\/[a-zA-Z0-9-]*" placeholder="company/name-or-id">
-                        <p class="form-input-hint">Example: cocacola/contactform</p>
-                    </div>
-                    <div class="form-group">
-                        <label>Color scheme</label>
-                        <select class="form-select" id="btn-color-scheme">
-                            <option selected value="light">Light</option>
-                            <option value="dark">Dark</option>
-                            <option value="auto">Auto</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label class="form-checkbox">
-                            <input type="checkbox" id="btn-size">
-                            <i class="form-icon"></i> Small button
-                        </label>
-                    </div>
-                </form>
+      <div class="columns" style="margin: 50px 0">
+        <div class="column">
+          <h3>Options</h3>
+          <form>
+            <div class="form-group" id="form-id">
+              <label class="form-label" for="form-id">Form ID or URL</label>
+              <input
+                required
+                class="form-input"
+                type="text"
+                id="btn-id"
+                pattern="^[a-zA-Z0-9]+\/[a-zA-Z0-9-]+"
+                placeholder="company/name-or-id"
+              />
+              <p class="form-input-hint">Example: cocacola/contactform</p>
             </div>
-            <div class="column">
-                <h3>Code</h3>
-                <div class="form-group">
-                    <textarea class="form-input my-2" id="btn-code" onclick="this.focus();this.select()"
-                        readonly="readonly" placeholder="Textarea" rows="3">
+            <div class="form-group">
+              <label class="form-label">Button text</label>
+              <input
+                class="form-input"
+                type="text"
+                id="btn-text"
+                value="Fill with OnlyOnce"
+              />
+            </div>
+            <div class="form-group">
+              <label>Color scheme</label>
+              <select class="form-select" id="btn-color-scheme">
+                <option selected value="light">Light</option>
+                <option value="dark">Dark</option>
+                <option value="auto">Auto</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-checkbox">
+                <input type="checkbox" id="btn-size" />
+                <i class="form-icon"></i> Small button
+              </label>
+            </div>
+          </form>
+        </div>
+        <div class="column">
+          <h3>Code</h3>
+          <div class="form-group">
+            <textarea
+              class="form-input my-2"
+              id="btn-code"
+              disabled
+              onclick="this.focus();this.select()"
+              readonly="readonly"
+              placeholder="Textarea"
+              rows="3"
+            >
 <a href="javascript:void(null)" data-size="normal" data-color-scheme="light" aria-label="Fill with OnlyOnce" class="oo-btn">Fill with OnlyOnce</a>
-                    </textarea>
-                    <textarea class="form-input my-2" onclick="this.focus();this.select()" readonly="readonly"
-                        placeholder="Textarea" rows="3">
+                    </textarea
+            >
+            <textarea
+              class="form-input my-2"
+              onclick="this.focus();this.select()"
+              readonly="readonly"
+              placeholder="Textarea"
+              rows="3"
+            >
 <!-- Place this tag in your head or just before your close body tag. -->
 <script async defer src="https://buttons.onlyonce.com/oo-btn.js"></script>
-                    </textarea>
-                </div>
-            </div>
+                    </textarea
+            >
+          </div>
         </div>
+      </div>
     </div>
     <script async defer src="/preview.js"></script>
     <script async defer src="/oo-btn.js"></script>
-</body>
-
+  </body>
 </html>
