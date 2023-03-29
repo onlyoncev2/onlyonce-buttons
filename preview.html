@@ -1,23 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Demo page</title>
+    <title>OnlyOnce - Demo page</title>
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+    <link href="/spectre.min.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>Demo page</h1>
-    <a
-      href="javascript:void(null)"
-      data-id="demo/page"
-      data-size="normal"
-      data-color-scheme="light"
-      aria-label="Fill with OnlyOnce"
-      class="oo-btn"
-      >Fill with OnlyOnce</a
-    >
-    <!-- Place this tag in your head or just before your close body tag. -->
-    <script async defer src="https://buttons.onlyonce.com/oo-btn.js"></script>
+    <div class="container grid-lg">
+      <div class="d-flex">
+        <img src="/icon.svg" class="px-2" />
+        <h1 style="margin: 50px 0">OnlyOnce's Demo</h1>
+      </div>
+      <div class="columns" style="margin: 50px 0">
+        <div class="column">
+          <h3>Join our team of Agile experts!</h3>
+          <p>
+            We have open positions for Scrum Masters, Product Owners, Agile
+            coaches, and trainers. Work with diverse clients and industries,
+            grow your career and make a real impact. Competitive compensation
+            and flexible schedules. Apply now by sending your CV and cover
+            letter through the button below.
+          </p>
+          <a
+            href="javascript:void(null)"
+            data-id="onlyonce/test"
+            data-size="small"
+            data-color-scheme="dark"
+            aria-label="Fill with OnlyOnce"
+            class="oo-btn"
+            >Fill with OnlyOnce</a
+          >
+        </div>
+      </div>
+
+      <!-- Place this tag in your head or just before your close body tag. -->
+      <script async defer src="https://buttons.onlyonce.com/oo-btn.js"></script>
+    </div>
   </body>
 </html>
