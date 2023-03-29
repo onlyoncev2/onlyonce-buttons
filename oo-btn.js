@@ -5,7 +5,7 @@
   "use strict";
 
   var document = window.document;
-  var domain = "forms.onlyonce.com";
+  var domain = "https://forms.onlyonce.com";
 
   var buttonClass = "oo-btn";
   var styling =
@@ -28,12 +28,17 @@
       btn.innerHTML = icon;
       btn.append(span);
 
-      // btn.href = "#";
-
       let selectedColorScheme = btn.getAttribute("data-color-scheme");
       if (selectedColorScheme == null) {
         btn.setAttribute("data-color-scheme", "light");
       }
+
+      let formId = btn.getAttribute("data-id");
+      if(formId == undefined){
+        console.warn("No valid data-id attribute found on OnlyOnce button")
+        return;
+      }
+      btn.href = `${domain}/id/${formId}`;
     });
   };
 
